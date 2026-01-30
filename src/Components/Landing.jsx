@@ -1,6 +1,7 @@
 import React from 'react';
 import { Camera, Search, CheckCircle, Zap, ShieldCheck, ArrowRight, Star, Cpu, Clock } from 'lucide-react';
 import PhotoShowcase from './photoShowcase';
+import OptInForm from './WhatsAppSection';
 
 
 const LandingPage = ({ onStart }) => {
@@ -134,41 +135,8 @@ const LandingPage = ({ onStart }) => {
 
 
 
-            {/* --- FORM SECTION --- */}
-            <section id="buscar" className="py-24 bg-slate-900 relative">
-                <div className="max-w-xl mx-auto px-6 relative z-10">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-black text-white mb-4">Pronto para se ver?</h2>
-                        <p className="text-slate-400">Preencha os dados e deixe a mágica acontecer.</p>
-                    </div>
+            <OptInForm />
 
-                    <form className="space-y-4">
-                        <div className="bg-white/5 p-8 rounded-[2rem] border border-white/10 backdrop-blur-xl">
-                            <div className="space-y-4">
-                                <select className="w-full p-4 bg-white/10 border border-white/10 rounded-2xl outline-none focus:ring-2 focus:ring-orange-500 text-white">
-                                    <option className="bg-slate-900">Selecione o Evento</option>
-                                    <option className="bg-slate-900">Maratona de Verão 2026</option>
-                                </select>
-                                <input type="text" placeholder="Seu Nome Completo" className="w-full p-4 bg-white/10 border border-white/10 rounded-2xl text-white outline-none focus:ring-2 focus:ring-orange-500" />
-                                <input type="email" placeholder="E-mail para entrega" className="w-full p-4 bg-white/10 border border-white/10 rounded-2xl text-white outline-none focus:ring-2 focus:ring-orange-500" />
-
-                                <div className="group relative border-2 border-dashed border-white/20 hover:border-orange-500/50 transition-colors bg-white/5 p-10 rounded-2xl text-center cursor-pointer">
-                                    <Camera className="mx-auto text-orange-500 mb-2 group-hover:scale-110 transition-transform" size={32} />
-                                    <p className="text-white font-medium">Subir foto de referência</p>
-                                    <p className="text-xs text-slate-400 mt-1 uppercase tracking-widest">Selfie ou Foto de Rosto</p>
-                                </div>
-
-                                <button
-                                    type="button"
-                                    onClick={onStart}
-                                    className="w-full bg-orange-600 hover:bg-orange-500 text-white p-5 rounded-2xl font-black text-lg transition-all shadow-lg shadow-orange-900/20">
-                                    GERAR MINHA GALERIA AGORA
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
 
             {/* --- FOOTER --- */}
             <footer className="py-12 border-t border-slate-100">

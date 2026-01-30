@@ -43,7 +43,7 @@ const PhotoShowcase = () => {
             </div>
 
             <p className="mt-20 text-slate-400 text-sm italic">
-                Encontramos sempre os melhores cliques!
+                Selecionamos sempre os melhores cliques!
             </p>
         </div>
     );
